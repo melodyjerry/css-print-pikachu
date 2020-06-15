@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before{
+    box-sizing: border-box;
+}
+
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;    
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.code-wrapper{
+    flex:1;
+    height:50%;
+    width: 100%;
+    background-color: #fff;
+}
+.preview-wrapper{
+    flex: 1;
+    background: #ffe000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#code{
+    overflow: hidden;
+    height: 100%;
+}
+
+.actions{
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* border:1px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+
+.actions>button{
+    margin: 10px;
+    background-color: #ddd;
+    padding: 8px 10px;
+    border:none;
+}
+.actions>button.active{
+    box-shadow:0 1px 1px rgba(0,0,0,0.8)
+}
+.actions>button:focus{
+    outline: none;
+}
